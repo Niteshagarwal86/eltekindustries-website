@@ -8,7 +8,7 @@ It's plain HTML, Tailwind CSS and one small vanilla JS file. There's no framewor
 
 ## Run locally
 
-Requires **Node.js 18+**.
+Requires **Node.js 22+**.
 
 ```bash
 npm install
@@ -79,7 +79,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 22 }
       - run: npm ci && npm run build
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
