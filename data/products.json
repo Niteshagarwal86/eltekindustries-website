@@ -1,0 +1,162 @@
+[
+  {
+    "name": "PVC Conduit Pipe",
+    "slug": "conduit-pipe",
+    "icon": "conduit-pipe",
+    "short": "ISI-marked rigid PVC conduit for concealed and surface wiring, from 20 mm to 50 mm.",
+    "intro": "Rigid PVC electrical conduit pipe conforming to IS 9537 — the backbone of safe, long-lasting wiring in homes, buildings and plants.",
+    "seoTitle": "PVC Conduit Pipe Manufacturer in Uttarakhand | 20–50 mm ISI | Eltek Industries",
+    "seoDescription": "ISI-marked PVC conduit pipe (IS 9537) in 20, 25, 32, 40 and 50 mm from Eltek Industries, SIDCUL Pantnagar. Bulk and project supply across India.",
+    "isi": true,
+    "features": [
+      "ISI marked, conforming to IS 9537",
+      "Fire-retardant, self-extinguishing PVC compound",
+      "High impact and crush strength for concealed slab work",
+      "Smooth inner bore for easy wire pulling",
+      "Consistent wall thickness and true round section",
+      "Termite, rust and corrosion proof"
+    ],
+    "sizeLabel": "Outer diameter",
+    "sizes": [
+      { "size": "20 mm", "use": "Light and fan points, single circuits", "pack": "[Pack info]" },
+      { "size": "25 mm", "use": "Switchboard drops, socket and AC circuits", "pack": "[Pack info]" },
+      { "size": "32 mm", "use": "Sub-main runs and distribution board feeds", "pack": "[Pack info]" },
+      { "size": "40 mm", "use": "Main feeders, commercial and multi-circuit runs", "pack": "[Pack info]" },
+      { "size": "50 mm", "use": "Industrial trunk runs and service entries", "pack": "[Pack info]" }
+    ],
+    "colours": "[Colours — default: Grey, White, Black]",
+    "applications": {
+      "domestic": ["Concealed wiring in walls and slabs", "Surface wiring in utility areas", "New homes, apartments and villas", "Rewiring during renovations"],
+      "industrial": ["Factory and warehouse power runs", "Hospitals, malls and commercial towers", "Panel and DB interconnections", "Infrastructure and project tenders"]
+    },
+    "related": ["bend", "flexible-pipe", "accessories"]
+  },
+  {
+    "name": "PVC Casing & Capping",
+    "slug": "casing-capping",
+    "icon": "casing-capping",
+    "short": "Neat surface wiring channels with snap-fit caps — ideal for renovations and add-on points.",
+    "intro": "PVC casing and capping lets you run wiring neatly on the wall surface — no chasing, no dust, and easy access later.",
+    "seoTitle": "PVC Casing Capping Manufacturer | 20×12 to 50×50 mm | Eltek Industries",
+    "seoDescription": "PVC casing & capping in 20×12, 25×16, 30×15, 50×20 and 50×50 mm from Eltek Industries, Pantnagar, Uttarakhand. Neat surface wiring for homes and offices.",
+    "isi": false,
+    "features": [
+      "Snap-fit capping that stays firmly closed",
+      "Clean finish that blends with interiors",
+      "Fire-retardant, self-extinguishing PVC",
+      "Easy to cut, bend around corners and fix",
+      "Lets you add or change wiring without breaking walls",
+      "Termite and moisture resistant"
+    ],
+    "sizeLabel": "Width × height",
+    "sizes": [
+      { "size": "20 × 12 mm", "use": "Single light or fan point extension", "pack": "[Pack info]" },
+      { "size": "25 × 16 mm", "use": "Two to three wires, switchboard feeds", "pack": "[Pack info]" },
+      { "size": "30 × 15 mm", "use": "Room-level circuits and data cables", "pack": "[Pack info]" },
+      { "size": "50 × 20 mm", "use": "Multiple circuits along skirting or ceiling", "pack": "[Pack info]" },
+      { "size": "50 × 50 mm", "use": "Heavy cable bunches in offices and shops", "pack": "[Pack info]" }
+    ],
+    "colours": "[Colours — default: White, Ivory, Grey]",
+    "applications": {
+      "domestic": ["Renovations without wall chasing", "Adding new sockets or AC points", "Rented homes and quick upgrades", "Data, TV and CCTV cable routing"],
+      "industrial": ["Office and shop fit-outs", "Control room and server cable routing", "Retrofits in running facilities", "Temporary site installations"]
+    },
+    "related": ["conduit-pipe", "accessories", "bend"]
+  },
+  {
+    "name": "PVC Bend",
+    "slug": "bend",
+    "icon": "bend",
+    "short": "Smooth-radius PVC bends that turn conduit runs without kinking the wire path.",
+    "intro": "Factory-formed PVC bends give every conduit run a smooth, consistent turn — so wires pull through easily and insulation stays protected.",
+    "seoTitle": "PVC Bend for Electrical Conduit | 20–50 mm | Eltek Industries",
+    "seoDescription": "PVC conduit bends in 20, 25, 32, 40 and 50 mm from Eltek Industries, SIDCUL Pantnagar, Uttarakhand. Smooth radius for easy wire pulling.",
+    "isi": false,
+    "features": [
+      "Smooth, uniform bend radius",
+      "Tight socket fit with Eltek conduit pipes",
+      "No kinks or flattening at the turn",
+      "Fire-retardant PVC compound",
+      "Saves time versus site heat-bending",
+      "Matches pipe colour and finish"
+    ],
+    "sizeLabel": "Pipe size",
+    "sizes": [
+      { "size": "20 mm", "use": "Turns in light and fan circuits", "pack": "[Pack info]" },
+      { "size": "25 mm", "use": "Turns in socket and switchboard runs", "pack": "[Pack info]" },
+      { "size": "32 mm", "use": "Sub-main and DB feed turns", "pack": "[Pack info]" },
+      { "size": "40 mm", "use": "Main feeder turns", "pack": "[Pack info]" },
+      { "size": "50 mm", "use": "Industrial trunk-line turns", "pack": "[Pack info]" }
+    ],
+    "colours": "[Colours — default: Grey, White, Black]",
+    "applications": {
+      "domestic": ["Slab-to-wall transitions", "Corners in concealed wiring", "Ceiling light point drops"],
+      "industrial": ["Direction changes in long conduit runs", "Panel entries and risers", "Ceiling and trench routing"]
+    },
+    "related": ["conduit-pipe", "flexible-pipe", "accessories"]
+  },
+  {
+    "name": "Corrugated Flexible Pipe",
+    "slug": "flexible-pipe",
+    "icon": "flexible-pipe",
+    "short": "Flexible corrugated PVC conduit that bends by hand around obstacles and machines.",
+    "intro": "Corrugated flexible pipe bends by hand around beams, ducts and machines — ideal wherever a rigid conduit can't go.",
+    "seoTitle": "Corrugated Flexible PVC Pipe | 20–50 mm | Eltek Industries Uttarakhand",
+    "seoDescription": "Corrugated flexible PVC conduit pipe in 20, 25, 32, 40 and 50 mm from Eltek Industries, Pantnagar. For false ceilings, machine connections and tight routes.",
+    "isi": false,
+    "features": [
+      "Bends by hand — no tools or heating",
+      "Crush-resistant corrugated wall",
+      "Supplied in easy-to-handle coils",
+      "Fire-retardant PVC compound",
+      "Light weight for quick installation",
+      "Absorbs vibration at machine connections"
+    ],
+    "sizeLabel": "Outer diameter",
+    "sizes": [
+      { "size": "20 mm", "use": "False-ceiling light points", "pack": "[Coil length]" },
+      { "size": "25 mm", "use": "Ceiling fan and AC drops", "pack": "[Coil length]" },
+      { "size": "32 mm", "use": "Equipment and panel connections", "pack": "[Coil length]" },
+      { "size": "40 mm", "use": "Machine feeds in workshops", "pack": "[Coil length]" },
+      { "size": "50 mm", "use": "Heavy machine and utility connections", "pack": "[Coil length]" }
+    ],
+    "colours": "[Colours — default: Grey, Black]",
+    "applications": {
+      "domestic": ["False-ceiling wiring", "Routing around beams and ducts", "Modular kitchen appliance points"],
+      "industrial": ["Machine and motor connections", "Vibration-prone equipment", "Cable trays to equipment drops"]
+    },
+    "related": ["conduit-pipe", "bend", "accessories"]
+  },
+  {
+    "name": "Other Accessories",
+    "slug": "accessories",
+    "icon": "accessories",
+    "short": "Junction boxes, saddles, round sheets, fan sheets and surface boxes to complete every installation.",
+    "intro": "Everything you need to finish a conduit installation — from one manufacturer, matched to Eltek pipes.",
+    "seoTitle": "PVC Junction Box, Saddle, Fan Sheet & Accessories | Eltek Industries",
+    "seoDescription": "PVC junction box, PVC saddle, PVC round sheet, PVC fan sheet and PVC surface box from Eltek Industries, SIDCUL Pantnagar, Uttarakhand.",
+    "isi": false,
+    "features": [
+      "Matched to Eltek conduit sizes",
+      "Fire-retardant PVC",
+      "Clean, uniform finish",
+      "Easy fixing on walls and ceilings",
+      "Full range from one source",
+      "Bulk packs for contractors"
+    ],
+    "sizeLabel": "Item",
+    "sizes": [
+      { "size": "PVC Junction Box", "illustration": "junction-box", "use": "Joints, tap-offs and inspection points in conduit runs", "pack": "[Pack info]" },
+      { "size": "PVC Saddle", "illustration": "saddle", "use": "Fixing conduit pipes firmly to walls and ceilings", "pack": "[Pack info]" },
+      { "size": "PVC Round Sheet", "illustration": "round-sheet", "use": "Ceiling light point cover plates", "pack": "[Pack info]" },
+      { "size": "PVC Fan Sheet", "illustration": "fan-sheet", "use": "Ceiling fan hook point cover plates", "pack": "[Pack info]" },
+      { "size": "PVC Surface Box", "illustration": "surface-box", "use": "Surface-mounted switch and socket boards", "pack": "[Pack info]" }
+    ],
+    "colours": "[Colours — default: White, Grey]",
+    "applications": {
+      "domestic": ["Ceiling light and fan points", "Switchboards on surface walls", "Securing pipes in utility areas"],
+      "industrial": ["Junction and inspection points", "Long-run pipe fixing", "Surface boards in plants and stores"]
+    },
+    "related": ["conduit-pipe", "casing-capping", "bend"]
+  }
+]

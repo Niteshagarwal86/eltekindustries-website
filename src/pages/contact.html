@@ -1,0 +1,75 @@
+---
+title: Contact Eltek Industries | Get a Quote for PVC Conduit Pipes | Pantnagar, Uttarakhand
+description: Contact Eltek Industries, SIDCUL Pantnagar, Uttarakhand for PVC conduit pipe, casing capping, bends, flexible pipe and accessory quotes. Call +91 70379 01222, WhatsApp or email.
+crumb: Contact
+---
+<section class="bg-sunken bg-circuit" aria-labelledby="contact-h">
+  <div class="container-site py-12 sm:py-16">
+    <p class="eyebrow">Contact &amp; quote</p>
+    <h1 id="contact-h" class="h-display mt-3 max-w-3xl">Let's talk about your wiring project</h1>
+    <p class="lead max-w-2xl">For prices, bulk orders, dealership or technical questions — call, WhatsApp, email or send the form below.</p>
+    <ul class="mt-10 grid gap-4 sm:grid-cols-3">
+      <li><a href="tel:{{ site.phoneTel }}" class="card card-hover flex h-full items-center gap-4 p-5">
+        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-orange text-navy">{{@icon phone "h-6 w-6"}}</span>
+        <span><span class="block text-sm text-muted">Call us</span><span class="block font-heading text-lg font-bold">{{ site.phoneDisplay }}</span></span></a></li>
+      <li><a href="{{ waDefault }}" target="_blank" rel="noopener" class="card card-hover flex h-full items-center gap-4 p-5">
+        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-[#167A3E] text-white">{{@icon whatsapp "h-6 w-6"}}</span>
+        <span><span class="block text-sm text-muted">WhatsApp</span><span class="block font-heading text-lg font-bold">Chat with us</span></span></a></li>
+      <li><a href="mailto:{{ site.email }}" class="card card-hover flex h-full items-center gap-4 p-5">
+        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-navy text-white">{{@icon mail "h-6 w-6"}}</span>
+        <span class="min-w-0"><span class="block text-sm text-muted">Email</span><span class="block break-all font-heading font-bold">{{ site.email }}</span></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="quote" class="section scroll-mt-20" aria-labelledby="quote-h">
+  <div class="container-site grid gap-10 lg:grid-cols-[1.25fr_0.75fr]">
+    <form name="quote" method="POST" action="{{@formAction}}" data-ajax data-prefill data-formspree="{{ site.formspreeId }}" data-netlify="true" data-netlify-honeypot="bot-field" class="card p-6 sm:p-8">
+      <h2 id="quote-h" class="text-2xl font-extrabold sm:text-3xl">Get a quote</h2>
+      <p class="mt-1 text-muted">Share sizes, quantities and delivery location for an accurate quote.</p>
+      <input type="hidden" name="form-name" value="quote">
+      <input type="hidden" name="_subject" value="New quote request — eltekindustries.in">
+      <p class="hidden"><label>Leave this empty: <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="mt-6 grid gap-5 sm:grid-cols-2">
+        <div><label class="field-label" for="q-name">Name *</label><input class="field" type="text" id="q-name" name="name" autocomplete="name" required></div>
+        <div><label class="field-label" for="q-phone">Phone *</label><input class="field" id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+\s\-]{10,15}" required></div>
+        <div class="sm:col-span-2"><label class="field-label" for="q-email">Email</label><input class="field" id="q-email" name="email" type="email" autocomplete="email"></div>
+        <div><label class="field-label" for="q-type">I am a *</label>
+          <select class="field" id="q-type" name="customer_type" required>
+            <option value="">Select one</option><option>Homeowner</option><option>Electrician</option><option>Contractor</option><option>Dealer</option><option>Industry</option>
+          </select></div>
+        <div><label class="field-label" for="q-product">Product</label>
+          <select class="field" id="q-product" name="product"><option value="">Select a product</option>{{@productOptions}}</select></div>
+        <div class="sm:col-span-2"><label class="field-label" for="q-qty">Quantity</label><input class="field" type="text" id="q-qty" name="quantity" placeholder="e.g. 25 mm × 500 lengths, 20 mm bends × 200"></div>
+        <div class="sm:col-span-2"><label class="field-label" for="q-msg">Message</label><textarea class="field min-h-[130px]" id="q-msg" name="message" rows="4" placeholder="Sizes, delivery location, timeline…"></textarea></div>
+      </div>
+      <button type="submit" class="btn-primary mt-6 w-full sm:w-auto">Send enquiry {{@icon arrow "h-4 w-4"}}</button>
+      {{> form-status}}
+    </form>
+
+    <aside class="space-y-6" aria-label="Address and hours">
+      <div class="card p-6">
+        <h2 class="flex items-center gap-2 text-lg font-bold">{{@icon factory "h-5 w-5 text-accent"}} Manufacturing unit</h2>
+        <address class="mt-3 not-italic leading-relaxed text-muted">{{ site.name }}<br>{{ site.address.line1 }}<br>{{ site.address.line2 }}<br>{{ site.address.region }} – {{ site.address.postalCode }}, {{ site.address.country }}</address>
+        <a class="link mt-3 text-sm" href="https://www.google.com/maps/search/?api=1&amp;query={{@mapQuery}}" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="card p-6">
+        <h2 class="flex items-center gap-2 text-lg font-bold">{{@icon clock "h-5 w-5 text-accent"}} Business hours</h2>
+        <p class="mt-3 text-muted">{{ site.businessHours }}</p>
+      </div>
+      <div class="card p-6">
+        <h2 class="flex items-center gap-2 text-lg font-bold">{{@icon users "h-5 w-5 text-accent"}} Dealers wanted</h2>
+        <p class="mt-3 text-muted">Interested in selling Eltek in your city?</p>
+        <a class="link mt-2 text-sm" href="/dealer/">Become a dealer</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="pb-16" aria-label="Map">
+  <div class="container-site">
+    <div class="overflow-hidden rounded-[1.75rem] border border-line shadow-soft">
+      <iframe title="Map: SIDCUL Pantnagar, Uttarakhand" src="https://maps.google.com/maps?q={{@mapQuery}}&amp;z=13&amp;output=embed" width="1200" height="420" class="block h-[340px] w-full sm:h-[420px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>

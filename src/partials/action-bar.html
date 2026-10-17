@@ -1,0 +1,11 @@
+<!-- Mobile: sticky bottom action bar -->
+<nav class="mobile-bar fixed inset-x-0 bottom-0 z-40 grid grid-cols-3 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_24px_-12px_rgb(11_31_58/.25)] backdrop-blur md:hidden" aria-label="Quick actions">
+  <a href="tel:{{ site.phoneTel }}" class="flex min-h-[60px] flex-col items-center justify-center gap-1 text-xs font-bold text-ink">{{@icon phone "h-5 w-5 text-accent"}}Call</a>
+  <a href="{{ waDefault }}" target="_blank" rel="noopener" class="flex min-h-[60px] flex-col items-center justify-center gap-1 border-x border-line text-xs font-bold text-ink">{{@icon whatsapp "h-5 w-5 text-isiink"}}WhatsApp</a>
+  <a href="/contact/#quote" class="flex min-h-[60px] flex-col items-center justify-center gap-1 bg-orange text-xs font-bold text-navy">{{@icon tag "h-5 w-5"}}Get Quote</a>
+</nav>
+
+<!-- Desktop: floating WhatsApp button -->
+<a href="{{ waDefault }}" target="_blank" rel="noopener" class="wa-float fixed bottom-6 right-6 z-40 hidden h-14 items-center gap-2 rounded-full bg-[#167A3E] pl-4 pr-5 font-heading text-sm font-bold text-white shadow-lift transition hover:-translate-y-0.5 hover:bg-[#115F30] md:inline-flex">
+  {{@icon whatsapp "h-6 w-6"}}<span>WhatsApp us</span>
+</a>

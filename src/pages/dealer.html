@@ -1,0 +1,72 @@
+---
+title: Become a PVC Conduit Dealer / Distributor | Eltek Industries Uttarakhand
+description: Become an Eltek Industries dealer or distributor for ISI PVC conduit pipes, casing capping, bends, flexible pipes and accessories. Good margins, marketing support and consistent supply from SIDCUL Pantnagar.
+crumb: Become a Dealer
+---
+<section class="relative overflow-hidden bg-orange text-navy" aria-labelledby="dealer-h">
+  <svg class="pointer-events-none absolute -right-16 -top-10 h-[28rem] w-[28rem] text-navy/10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+  <div class="container-site relative py-14 sm:py-20">
+    <p class="font-heading text-sm font-bold uppercase tracking-[0.18em]">Dealers &amp; distributors</p>
+    <h1 id="dealer-h" class="h-display mt-3 max-w-3xl !text-navy">Grow with Eltek — become a dealer in your city</h1>
+    <p class="mt-5 max-w-2xl text-lg text-navy/85">Stock a complete PVC conduit range from one manufacturer, backed by certification your customers recognise.</p>
+    <a href="#apply" class="btn mt-8 bg-navy text-white hover:bg-charcoal">Apply now {{@icon arrow "h-4 w-4"}}</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="benefits-h">
+  <div class="container-site">
+    <p class="eyebrow">Why partner with us</p>
+    <h2 id="benefits-h" class="h-section">Dealer benefits</h2>
+    <ul class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <li class="card p-6" data-reveal style="--d:0ms"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-orange/10 text-accent">{{@icon tag "h-6 w-6"}}</span><h3 class="mt-4 text-lg font-bold">Healthy margins</h3><p class="mt-1.5 text-sm text-muted">Factory-direct pricing that leaves room for your business to grow.</p></li>
+      <li class="card p-6" data-reveal style="--d:70ms"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-orange/10 text-accent">{{@icon spark "h-6 w-6"}}</span><h3 class="mt-4 text-lg font-bold">Marketing support</h3><p class="mt-1.5 text-sm text-muted">Catalogues and promotional material to help you sell at the counter.</p></li>
+      <li class="card p-6" data-reveal style="--d:140ms"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-orange/10 text-accent">{{@icon truck "h-6 w-6"}}</span><h3 class="mt-4 text-lg font-bold">Consistent supply</h3><p class="mt-1.5 text-sm text-muted">Direct from our plant at SIDCUL Pantnagar, so your stock stays full.</p></li>
+      <li class="card p-6" data-reveal style="--d:210ms"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-orange/10 text-accent">{{@icon layers "h-6 w-6"}}</span><h3 class="mt-4 text-lg font-bold">Full range, one source</h3><p class="mt-1.5 text-sm text-muted">Pipes, bends, flexible pipe, casing &amp; capping and accessories.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section bg-sunken" aria-labelledby="steps-h">
+  <div class="container-site">
+    <h2 id="steps-h" class="h-section">How it works</h2>
+    <ol class="mt-10 grid gap-6 md:grid-cols-3">
+      <li class="relative card p-6 sm:p-8" data-reveal style="--d:0ms"><span class="grid h-12 w-12 place-items-center rounded-full bg-navy font-heading text-xl font-extrabold text-white">1</span><h3 class="mt-4 text-xl font-bold">Apply</h3><p class="mt-2 text-muted">Fill in the short form below with your firm details.</p></li>
+      <li class="relative card p-6 sm:p-8" data-reveal style="--d:100ms"><span class="grid h-12 w-12 place-items-center rounded-full bg-navy font-heading text-xl font-extrabold text-white">2</span><h3 class="mt-4 text-xl font-bold">Talk to our team</h3><p class="mt-2 text-muted">We call you to discuss your area, range and pricing.</p></li>
+      <li class="relative card p-6 sm:p-8" data-reveal style="--d:200ms"><span class="grid h-12 w-12 place-items-center rounded-full bg-orange font-heading text-xl font-extrabold text-navy">3</span><h3 class="mt-4 text-xl font-bold">Start selling</h3><p class="mt-2 text-muted">Place your first order and receive your Eltek stock.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="apply" class="section scroll-mt-20" aria-labelledby="apply-h">
+  <div class="container-site grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+    <div>
+      <p class="eyebrow">Dealer application</p>
+      <h2 id="apply-h" class="h-section">Apply to become a dealer</h2>
+      <p class="lead">Prefer to talk? Call or WhatsApp us directly.</p>
+      <div class="mt-6 flex flex-col gap-3">
+        <a href="tel:{{ site.phoneTel }}" class="btn-secondary !justify-start">{{@icon phone}} {{ site.phoneDisplay }}</a>
+        <a href="{{@wa "Hi Eltek, I want to become a dealer in "}}" target="_blank" rel="noopener" class="btn-wa !justify-start">{{@icon whatsapp}} WhatsApp us</a>
+      </div>
+    </div>
+    <form name="dealer" method="POST" action="{{@formAction}}" data-ajax data-formspree="{{ site.formspreeId }}" data-netlify="true" data-netlify-honeypot="bot-field" class="card p-6 sm:p-8">
+      <input type="hidden" name="form-name" value="dealer">
+      <input type="hidden" name="_subject" value="New dealer enquiry — eltekindustries.in">
+      <p class="hidden"><label>Leave this empty: <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div><label class="field-label" for="d-name">Your name *</label><input class="field" type="text" id="d-name" name="name" autocomplete="name" required></div>
+        <div><label class="field-label" for="d-firm">Firm name *</label><input class="field" type="text" id="d-firm" name="firm" autocomplete="organization" required></div>
+        <div><label class="field-label" for="d-city">City *</label><input class="field" type="text" id="d-city" name="city" autocomplete="address-level2" required></div>
+        <div><label class="field-label" for="d-state">State *</label><select class="field" id="d-state" name="state" required><option value="">Select state</option>{{@stateOptions}}</select></div>
+        <div class="sm:col-span-2"><label class="field-label" for="d-business">Current business *</label>
+          <select class="field" id="d-business" name="current_business" required>
+            <option value="">Select one</option><option>Electrical retail shop</option><option>Electrical wholesale / distribution</option><option>Hardware / sanitary store</option><option>Electrical contractor</option><option>New business</option><option>Other</option>
+          </select></div>
+        <div><label class="field-label" for="d-phone">Phone *</label><input class="field" id="d-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+\s\-]{10,15}" required></div>
+        <div><label class="field-label" for="d-email">Email</label><input class="field" id="d-email" name="email" type="email" autocomplete="email"></div>
+        <div class="sm:col-span-2"><label class="field-label" for="d-msg">Message</label><textarea class="field min-h-[120px]" id="d-msg" name="message" rows="4" placeholder="Your area, current brands, expected monthly volume…"></textarea></div>
+      </div>
+      <button type="submit" class="btn-primary mt-6 w-full sm:w-auto">Submit application {{@icon arrow "h-4 w-4"}}</button>
+      {{> form-status}}
+    </form>
+  </div>
+</section>

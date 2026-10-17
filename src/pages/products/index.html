@@ -1,0 +1,45 @@
+---
+title: PVC Electrical Conduit Products | Pipes, Bends, Casing Capping | Eltek Industries
+description: Full range of Eltek PVC electrical products — ISI conduit pipe 20–50 mm, PVC casing & capping, PVC bend, corrugated flexible pipe, junction box, saddle, fan sheet and more. Made in SIDCUL Pantnagar, Uttarakhand.
+crumb: Products
+---
+<section class="relative overflow-hidden bg-steel-dark text-white" aria-labelledby="products-h">
+  <div class="container-site py-14 sm:py-20">
+    <p class="eyebrow !text-[#FFB27F]">Products</p>
+    <h1 id="products-h" class="h-display mt-3 max-w-3xl !text-white">PVC conduit systems, from pipe to fan sheet</h1>
+    <p class="mt-5 max-w-2xl text-lg text-slate-300">Every product an electrician or project team needs for a complete PVC wiring installation — made in one plant to one quality standard.</p>
+    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+      <a href="/catalogue.html" class="btn-primary">{{@icon download "h-4 w-4"}} Download Catalogue</a>
+      <a href="/contact/#quote" class="btn-ghost-light">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-circuit" aria-labelledby="range-h">
+  <div class="container-site">
+    <h2 id="range-h" class="sr-only">Product range</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{{@productGrid}}
+      <div class="card flex flex-col justify-center p-6 sm:p-8" data-reveal>
+        <h2 class="text-2xl font-extrabold">Not sure which size?</h2>
+        <p class="mt-2 text-muted">Tell us what you're wiring — a 2BHK flat or a warehouse — and we'll suggest the right sizes and quantities.</p>
+        <div class="mt-6 flex flex-col gap-3">
+          <a href="{{ waDefault }}" target="_blank" rel="noopener" class="btn-wa">{{@icon whatsapp}} Ask on WhatsApp</a>
+          <a href="tel:{{ site.phoneTel }}" class="btn-secondary">{{@icon phone}} {{ site.phoneDisplay }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-sunken" aria-labelledby="compare-h">
+  <div class="container-site">
+    <h2 id="compare-h" class="h-section">Size range at a glance</h2>
+    <div class="mt-8 overflow-x-auto rounded-xl border border-line bg-surface shadow-soft">
+      <table class="w-full min-w-[560px] border-collapse text-left">
+        <caption class="sr-only">Sizes available per product</caption>
+        <thead><tr class="bg-navy font-heading text-sm text-white"><th scope="col" class="px-4 py-3">Product</th><th scope="col" class="px-4 py-3">Sizes</th></tr></thead>
+        <tbody>{{@sizeMatrix}}</tbody>
+      </table>
+    </div>
+  </div>
+</section>

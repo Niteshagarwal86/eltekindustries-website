@@ -1,0 +1,58 @@
+<header class="site-header sticky top-0 z-50 border-b border-line/70 bg-page/90 backdrop-blur-md" data-header>
+  <div class="container-site flex h-16 items-center justify-between gap-4 lg:h-20">
+    <a href="/" class="flex min-h-[44px] items-center gap-2.5 rounded-lg">
+      {{@logoMark "h-9 w-9 text-navy dark:text-white lg:h-11 lg:w-11"}}
+      {{> wordmark}}
+    </a>
+
+    <nav aria-label="Main" class="hidden lg:block">
+      <ul class="flex items-center gap-0.5 whitespace-nowrap font-heading text-[15px] font-bold xl:gap-1">
+        <li class="group relative">
+          <a href="/products/" {{ nav.products }} class="inline-flex min-h-[44px] items-center gap-1 rounded-lg px-2.5 hover:text-accent xl:px-3 aria-[current=page]:text-accent">Products {{@icon chevron "h-4 w-4 rotate-90 transition group-hover:-rotate-90"}}</a>
+          <div class="invisible absolute left-1/2 top-full w-[22rem] -translate-x-1/2 pt-3 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+            <ul class="card p-2 font-sans">{{@productMenuLinks}}
+              <li class="mt-1 border-t border-line pt-1"><a class="flex items-center justify-between rounded-xl p-3 text-sm font-bold text-accent hover:bg-sunken" href="/catalogue.html">Download Catalogue {{@icon download "h-4 w-4"}}</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/applications/" {{ nav.applications }} class="inline-flex min-h-[44px] items-center rounded-lg px-2.5 hover:text-accent xl:px-3 aria-[current=page]:text-accent">Applications</a></li>
+        <li><a href="/quality/" {{ nav.quality }} class="inline-flex min-h-[44px] items-center rounded-lg px-2.5 hover:text-accent xl:px-3 aria-[current=page]:text-accent">Quality</a></li>
+        <li><a href="/about/" {{ nav.about }} class="inline-flex min-h-[44px] items-center rounded-lg px-2.5 hover:text-accent xl:px-3 aria-[current=page]:text-accent">About</a></li>
+        <li><a href="/dealer/" {{ nav.dealer }} class="inline-flex min-h-[44px] items-center rounded-lg px-2.5 hover:text-accent xl:px-3 aria-[current=page]:text-accent"><span class="xl:hidden">Dealers</span><span class="hidden xl:inline">Become a Dealer</span></a></li>
+        <li><a href="/contact/" {{ nav.contact }} class="inline-flex min-h-[44px] items-center rounded-lg px-2.5 hover:text-accent xl:px-3 aria-[current=page]:text-accent">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="tel:{{ site.phoneTel }}" class="hidden min-h-[44px] items-center gap-2 rounded-lg px-2 font-heading text-sm font-bold xl:inline-flex">{{@icon phone "h-4 w-4 text-accent"}} {{ site.phoneDisplay }}</a>
+      <a href="/contact/#quote" class="btn-primary hidden whitespace-nowrap !min-h-[44px] !py-2 sm:inline-flex">Get a Quote</a>
+      <button type="button" class="grid h-11 w-11 place-items-center rounded-xl border border-line lg:hidden" data-menu-open aria-controls="mobile-menu" aria-expanded="false">
+        <span class="sr-only">Open menu</span>{{@icon menu "h-6 w-6"}}
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="menu-overlay bg-steel-dark fixed inset-0 z-[60] overflow-y-auto text-white lg:hidden" data-open="false" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="container-site flex h-16 items-center justify-between">
+    <a href="/" class="flex min-h-[44px] items-center gap-2.5">{{@logoMark "h-9 w-9 text-white"}}<span class="font-heading text-xl font-extrabold tracking-wide">ELTEK</span></a>
+    <button type="button" class="grid h-11 w-11 place-items-center rounded-xl border border-white/30" data-menu-close><span class="sr-only">Close menu</span>{{@icon close "h-6 w-6"}}</button>
+  </div>
+  <nav aria-label="Mobile" class="container-site pb-32 pt-6">
+    <ul class="space-y-1 font-heading text-3xl font-extrabold">
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.home }} href="/">Home</a></li>
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.products }} href="/products/">Products</a>
+        <ul class="mb-2 border-l-2 border-orange/60 pl-4 font-sans font-medium">{{@mobileProductLinks}}</ul></li>
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.applications }} href="/applications/">Applications</a></li>
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.quality }} href="/quality/">Quality</a></li>
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.about }} href="/about/">About Us</a></li>
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.dealer }} href="/dealer/">Become a Dealer</a></li>
+      <li><a class="block py-2.5 aria-[current=page]:text-orange" {{ nav.contact }} href="/contact/">Contact</a></li>
+    </ul>
+    <div class="mt-8 grid gap-3 sm:grid-cols-2">
+      <a href="/contact/#quote" class="btn-primary">Get a Quote</a>
+      <a href="/catalogue.html" class="btn-ghost-light">{{@icon download}} Download Catalogue</a>
+    </div>
+    <p class="mt-8 text-sm text-slate-300">{{@fullAddress}}</p>
+  </nav>
+</div>

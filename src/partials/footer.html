@@ -1,0 +1,45 @@
+<footer class="site-footer bg-steel-dark text-slate-300">
+  <div class="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.2fr_1.5fr] lg:py-16">
+    <div>
+      <a href="/" class="inline-flex items-center gap-3 text-white">
+        {{@logoMark "h-12 w-12 text-white"}}
+        <span class="leading-none"><span class="block font-heading text-2xl font-extrabold tracking-[0.08em]"><span class="wordmark-e">E</span>LTEK</span><span class="mt-1 block font-heading text-[0.65rem] font-bold tracking-[0.42em] text-slate-400">INDUSTRIES</span></span>
+      </a>
+      <p class="mt-5 max-w-xs text-sm leading-relaxed">Manufacturer of ISI-marked PVC electrical conduit pipes and fittings for homes, buildings and industry — made at SIDCUL Pantnagar, Uttarakhand.</p>
+      <ul class="mt-5 flex flex-wrap gap-2" aria-label="Certifications">
+        <li class="inline-flex items-center gap-1.5 rounded-full border border-[#1F8A4C] px-3 py-1 text-xs font-semibold text-[#7ee2a6]">{{@icon shield "h-4 w-4"}} ISO 9001:2015</li>
+        <li class="inline-flex items-center gap-1.5 rounded-full border border-[#1F8A4C] px-3 py-1 text-xs font-semibold text-[#7ee2a6]">{{@icon award "h-4 w-4"}} ISI · IS 9537</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-heading text-sm font-bold uppercase tracking-widest text-white">Company</h2>
+      <ul class="mt-4 space-y-2.5 text-sm">
+        <li><a class="hover:text-white" href="/about/">About Us</a></li>
+        <li><a class="hover:text-white" href="/quality/">Quality &amp; Certifications</a></li>
+        <li><a class="hover:text-white" href="/applications/">Applications</a></li>
+        <li><a class="hover:text-white" href="/dealer/">Become a Dealer</a></li>
+        <li><a class="hover:text-white" href="/contact/">Contact &amp; Quote</a></li>
+        <li><a class="hover:text-white" href="/catalogue.html">Download Catalogue</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-heading text-sm font-bold uppercase tracking-widest text-white">Products</h2>
+      <ul class="mt-4 space-y-2.5 text-sm">{{@productNavLinks}}</ul>
+    </div>
+    <div>
+      <h2 class="font-heading text-sm font-bold uppercase tracking-widest text-white">Contact</h2>
+      <address class="mt-4 space-y-3 text-sm not-italic">
+        <p class="flex gap-3">{{@icon pin "mt-0.5 h-5 w-5 shrink-0 text-orange"}}<span>{{@fullAddress}}</span></p>
+        <p><a class="flex min-h-[44px] items-center gap-3 hover:text-white" href="tel:{{ site.phoneTel }}">{{@icon phone "h-5 w-5 shrink-0 text-orange"}}{{ site.phoneDisplay }}</a></p>
+        <p><a class="flex min-h-[44px] items-center gap-3 hover:text-white" href="{{ waDefault }}" target="_blank" rel="noopener">{{@icon whatsapp "h-5 w-5 shrink-0 text-orange"}}WhatsApp {{ site.phoneDisplay }}</a></p>
+        <p><a class="flex min-h-[44px] items-center gap-3 break-all hover:text-white" href="mailto:{{ site.email }}">{{@icon mail "h-5 w-5 shrink-0 text-orange"}}{{ site.email }}</a></p>
+      </address>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="container-site flex flex-col gap-2 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <p>© <span data-year>{{@year}}</span> {{ site.name }}. All rights reserved.</p>
+      <p>Founded by {{ site.founder }} · Made in Uttarakhand, India</p>
+    </div>
+  </div>
+</footer>

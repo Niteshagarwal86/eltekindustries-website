@@ -1,0 +1,32 @@
+{
+  "_comment": "Single source of truth for company facts. Edit here, then run `npm run build`.",
+  "name": "Eltek Industries",
+  "shortName": "Eltek",
+  "url": "https://eltekindustries.in",
+  "founder": "Mr. Sachin Agarwal",
+  "founderTitle": "Founder & Managing Director",
+  "phoneDisplay": "+91 70379 01222",
+  "phoneTel": "+917037901222",
+  "whatsappBase": "https://wa.me/917037901222?text=",
+  "whatsappDefaultText": "Hi Eltek, I need a quote for ",
+  "email": "eltekindustriesrdp@gmail.com",
+  "address": {
+    "line1": "Plot No. 96, Sector IIOC",
+    "line2": "SIDCUL, Pantnagar",
+    "locality": "Pantnagar",
+    "region": "Uttarakhand",
+    "postalCode": "263153",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  "mapQuery": "SIDCUL Pantnagar, Uttarakhand 263153",
+  "businessHours": "[Business hours — e.g. Mon–Sat, 9:30 AM – 6:30 PM]",
+  "formspreeId": "FORMSPREE_ID",
+  "certifications": ["ISO 9001:2015", "ISI marked — IS 9537"],
+  "stats": [
+    { "label": "Years of manufacturing", "value": "10", "suffix": "+" },
+    { "label": "Dealers & distributors", "value": "250", "suffix": "+" },
+    { "label": "Tonnes per month", "value": "100", "suffix": "+" },
+    { "label": "Products & sizes in range", "value": "auto", "suffix": "", "_note": "auto = counted from products.json at build time" }
+  ]
+}

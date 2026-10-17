@@ -1,0 +1,33 @@
+---
+title: Product Catalogue | Eltek Industries PVC Conduit Systems
+description: Printable product catalogue of Eltek Industries — PVC conduit pipe, casing & capping, PVC bend, corrugated flexible pipe and accessories, with all sizes.
+crumb: Catalogue
+layout: print
+---
+<div class="mx-auto max-w-4xl px-4 py-8 sm:px-8 print:max-w-none print:p-0">
+  <div class="no-print mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-sunken p-4">
+    <a href="/" class="link text-sm">← Back to website</a>
+    <button type="button" onclick="window.print()" class="btn-primary !min-h-[44px]">{{@icon print "h-4 w-4"}} Print / Save as PDF</button>
+  </div>
+
+  <header class="flex flex-col gap-6 border-b-4 border-orange pb-8 sm:flex-row sm:items-end sm:justify-between">
+    <div class="flex items-center gap-4">
+      {{@logoMark "h-16 w-16 text-navy"}}
+      <div class="leading-none"><p class="font-heading text-4xl font-extrabold tracking-[0.08em] text-navy"><span class="wordmark-e">E</span>LTEK</p><p class="mt-1 font-heading text-xs font-bold tracking-[0.42em] text-muted">INDUSTRIES</p></div>
+    </div>
+    <div class="text-sm sm:text-right">
+      <p class="font-heading text-2xl font-extrabold">Product Catalogue</p>
+      <p class="text-muted">PVC Electrical Conduit Systems</p>
+      <p class="mt-2 flex flex-wrap gap-2 sm:justify-end"><span class="badge-cert !text-xs">ISO 9001:2015</span><span class="badge-cert !text-xs">ISI · IS 9537</span></p>
+    </div>
+  </header>
+
+  {{@catalogue}}
+
+  <footer class="mt-6 border-t-4 border-navy pt-6 text-sm">
+    <p class="font-heading text-lg font-bold">{{ site.name }}</p>
+    <p class="text-muted">{{@fullAddress}}</p>
+    <p class="mt-1">Phone / WhatsApp: <strong>{{ site.phoneDisplay }}</strong> · Email: <strong>{{ site.email }}</strong> · <strong>eltekindustries.in</strong></p>
+    <p class="mt-3 text-xs text-muted">Typical uses are a general guide. Specifications subject to change; please confirm current details when ordering.</p>
+  </footer>
+</div>

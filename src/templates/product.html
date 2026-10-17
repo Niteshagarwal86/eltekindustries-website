@@ -1,0 +1,94 @@
+---
+note: Rendered once per entry in data/products.json. `p` is the current product.
+---
+<section class="relative overflow-hidden bg-sunken bg-circuit" aria-labelledby="product-h">
+  <div class="container-site grid items-center gap-10 py-10 sm:py-14 lg:grid-cols-2 lg:py-20">
+    <div>
+      <nav aria-label="Breadcrumb" class="text-sm text-muted">
+        <ol class="flex flex-wrap items-center gap-1.5">
+          <li><a class="inline-flex min-h-[44px] items-center hover:text-accent" href="/">Home</a></li><li aria-hidden="true">/</li>
+          <li><a class="inline-flex min-h-[44px] items-center hover:text-accent" href="/products/">Products</a></li><li aria-hidden="true">/</li>
+          <li aria-current="page" class="font-semibold text-ink">{{ p.name }}</li>
+        </ol>
+      </nav>
+      <h1 id="product-h" class="h-display mt-3">{{ p.name }}</h1>
+      <p class="lead max-w-xl">{{ p.intro }}</p>
+      <div class="mt-5 grid justify-items-start gap-2 sm:flex sm:flex-wrap sm:items-center">{{@isiBadge}}<span class="badge-cert">{{@icon shield "h-4 w-4"}} ISO 9001:2015 plant</span></div>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="{{@productQuote}}" class="btn-primary">Request Quote</a>
+        <a href="{{@productWa}}" target="_blank" rel="noopener" class="btn-wa">{{@icon whatsapp}} WhatsApp for price</a>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute inset-6 rounded-full bg-orange/15 blur-3xl" aria-hidden="true"></div>
+      <div class="relative rounded-[2rem] border border-line bg-surface/70 p-6 shadow-lift backdrop-blur">{{@productHero}}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="features-h">
+  <div class="container-site">
+    <p class="eyebrow">Key features</p>
+    <h2 id="features-h" class="h-section">Why choose Eltek {{ p.name }}</h2>
+    <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{{@productFeatures}}</ul>
+  </div>
+</section>
+
+{{@accessoryTiles}}
+
+<section class="section bg-sunken" aria-labelledby="sizes-h" id="sizes">
+  <div class="container-site">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <p class="eyebrow">Size range</p>
+        <h2 id="sizes-h" class="h-section">Available sizes</h2>
+      </div>
+      <a href="/catalogue.html" class="link text-sm">Download full catalogue</a>
+    </div>
+    <div class="mt-8 sm:overflow-hidden sm:rounded-xl sm:border sm:border-line sm:bg-surface sm:shadow-soft">{{@sizeTable}}</div>
+    <p class="mt-4 text-sm text-muted">“Typical use” is a general guide. Your electrician or consultant should select sizes according to the cable size, number of circuits and applicable wiring rules.</p>
+
+    <div class="mt-10 card p-6">
+      <h3 class="text-lg font-bold">Colours</h3>
+      <p class="mt-1 text-muted">{{ p.colours }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="apps-h">
+  <div class="container-site">
+    <p class="eyebrow">Applications</p>
+    <h2 id="apps-h" class="h-section">Where it's used</h2>
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      <div class="rounded-[1.75rem] border border-line bg-[#FBF6EF] p-6 dark:bg-[#1d1915] sm:p-8" data-reveal="left">
+        <h3 class="flex items-center gap-3 text-xl font-extrabold"><span class="grid h-11 w-11 place-items-center rounded-xl bg-orange/15 text-accent">{{@icon home}}</span> Domestic</h3>
+        <ul class="mt-5 space-y-3">{{@appList domestic}}</ul>
+      </div>
+      <div class="rounded-[1.75rem] bg-steel-dark p-6 text-slate-200 sm:p-8" data-reveal="right">
+        <h3 class="flex items-center gap-3 text-xl font-extrabold !text-white"><span class="grid h-11 w-11 place-items-center rounded-xl bg-white/10 text-orange">{{@icon factory}}</span> Industrial &amp; commercial</h3>
+        <ul class="mt-5 space-y-3 [&_.text-accent]:!text-orange">{{@appList industrial}}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-sunken" aria-labelledby="related-h">
+  <div class="container-site">
+    <h2 id="related-h" class="h-section">Related products</h2>
+    <div class="mt-8 grid gap-4 lg:grid-cols-3">{{@relatedProducts}}</div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="cta-h">
+  <div class="container-site">
+    <div class="relative overflow-hidden rounded-[2rem] bg-steel-dark p-8 text-white sm:p-12" data-reveal>
+      <h2 id="cta-h" class="font-heading text-3xl font-extrabold !text-white sm:text-4xl">Get a price for {{ p.name }}</h2>
+      <p class="mt-3 max-w-2xl text-lg text-slate-300">Tell us the sizes and quantities you need — for a single home or a full project. Dealers and contractors get bulk pricing.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="{{@productQuote}}" class="btn-primary">Request Quote for {{ p.name }}</a>
+        <a href="{{@productWa}}" target="_blank" rel="noopener" class="btn-wa">{{@icon whatsapp}} WhatsApp</a>
+        <a href="tel:{{ site.phoneTel }}" class="btn-ghost-light">{{@icon phone}} {{ site.phoneDisplay }}</a>
+      </div>
+    </div>
+  </div>
+</section>

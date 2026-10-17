@@ -1,0 +1,19 @@
+{
+  "name": "eltekindustries-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static marketing website for Eltek Industries (eltekindustries.in)",
+  "scripts": {
+    "build": "node scripts/build.js && tailwindcss -i src/css/input.css -o dist/assets/css/style.css --minify",
+    "serve": "node scripts/serve.js",
+    "dev": "npm run build && node scripts/serve.js",
+    "watermark": "node scripts/watermark.js",
+    "validate": "html-validate \"dist/**/*.html\""
+  },
+  "devDependencies": {
+    "html-validate": "^11.16.2",
+    "potrace": "^2.1.8",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.19"
+  }
+}
